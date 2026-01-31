@@ -23,6 +23,8 @@ During EHR migrations, data quality issues can lead to patient safety risks, bil
 - /sql: validation queries
 
 ## Key Findings
-- No missing values or duplicate records
 - Patient_ID uniquely identifies records
 - Categorical and numeric fields passed validation
+- Validated patient identifiers to prevent record duplication during migration
+- Confirmed admission types to ensure downstream reporting accuracy
+- Verified length-of-stay ranges to avoid analytics distortion
