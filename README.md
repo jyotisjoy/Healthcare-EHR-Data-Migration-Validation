@@ -4,11 +4,13 @@
 This project simulates healthcare data quality validation typically performed during EHR data migrations.
 
 ## Business Context
-During EHR migrations, data quality issues can lead to patient safety risks, billing errors, and reporting inaccuracies. This project simulates validation steps performed prior to migrating patient records between systems.
+This project simulates data quality and analytical validation steps performed during Electronic Health Record (EHR) data migrations. Inaccurate or inconsistent data during migration can result in patient safety risks, billing errors, and unreliable operational reporting.
 
-## Objectives
-- Validate record counts and field completeness
-- Detect duplicates and data inconsistencies
+## Analytical & Quality Checks Performed
+- Validated record counts, uniqueness, and field completeness
+- Identified potential outliers in hospital length of stay that may indicate migration anomalies
+- Reviewed outcome distributions across treatments to confirm clinical plausibility
+- Analyzed admission types against length of stay to validate operational patterns
 - Apply business-rule validation
 - Perform SQL-based QA checks
 
